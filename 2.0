@@ -1,0 +1,29 @@
+#this program is going to attempt to find, copy, and rename a file
+#then I want it to find that file and restore it to the elden ring save file. 
+#possible problems renaming save file data could screw up how elden ring sees it. Might be best to simply copy it.
+#i have no idea what I am doing. 
+
+
+from distutils.file_util import move_file
+import sys
+import os
+import shutil
+
+
+user_input = input("Enter the Eldren Ring File path here")
+
+assert os.path.exists((user_input), "i did not that file at", +str(user_input)
+f = open(user_input,+str)
+print("save data found")
+
+scr_dir = user_input
+
+dest = input("input destination folder here")
+
+files =os.listdir(user_input)
+
+shutil.copytree(user_input,dest)
+
+
+#stuff to do with file data here
+f.close()
